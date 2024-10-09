@@ -8,7 +8,7 @@ from LavaTopPayment.models.types import *
 class PartnerSaleDto(BaseModel):
     currency: Currency
     count: int = Field(...,description='Количество проданных экземпляров')
-    amountTotal: int = Field(..., description='Общие продажи')
+    amountTotal: float = Field(..., description='Общие продажи')
 
 
 class ReportsResponses(BaseModel):

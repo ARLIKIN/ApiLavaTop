@@ -3,11 +3,11 @@ from datetime import datetime
 import httpx
 from typing import Optional, Dict, Any
 
-from models.donate import Donate
-from models.products import Invoice, ProductsResponse
-from models.reports import Reports, PartnerSalesPageDto
-from models.types import Currency, PaymentMethod, Language
-from models.webhooks import WebhookResponse, WebhookEventTypeDto, \
+from LavaTopPayment.models.donate import Donate
+from LavaTopPayment.models.products import Invoice, ProductsResponse
+from LavaTopPayment.models.reports import Reports, PartnerSalesPageDto
+from LavaTopPayment.models.types import Currency, PaymentMethod, Language
+from LavaTopPayment.models.webhooks import WebhookResponse, WebhookEventTypeDto, \
     WebhookAuthRequest, WebhookHistoryResponse
 
 

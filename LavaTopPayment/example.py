@@ -1,9 +1,15 @@
 # Пример использования клиента
 import asyncio
 
-from lava_top import LavaTop
-from models.types import Currency, PaymentMethod, Language, WebhookAuthTypeDto
-from models.webhooks import WebhookEventTypeDto, WebhookAuthRequest
+from LavaTopPayment import (
+    LavaTop,
+    Currency,
+    PaymentMethod,
+    Language,
+    WebhookEventTypeDto,
+    WebhookAuthRequest,
+    WebhookAuthTypeDto
+)
 
 TOKEN = 'TOKEN'
 
