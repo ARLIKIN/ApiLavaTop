@@ -1,6 +1,9 @@
 from datetime import datetime
 from typing import List
 
+from LavaTopPayment import *
+from LavaTopPayment.models.types import *
+
 
 class PartnerSaleDto(BaseModel):
     currency: Currency

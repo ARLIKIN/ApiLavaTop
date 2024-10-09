@@ -180,7 +180,7 @@ class LavaTop:
         email: str,
         offer_id: str,
         currency: Currency,
-        payment_method: PaymentMethod,
+        payment_method: Optional[PaymentMethod] = None,
         buyer_language: Optional[Language] = None
     ) -> Invoice:
         """
@@ -197,8 +197,9 @@ class LavaTop:
             "email": email,
             "offerId": offer_id,
             "currency": currency,
-            "paymentMethod": payment_method,
         }
+        if payment_method is not None:
+            json_data['paymentMethod'] = payment_method
         if buyer_language is not None:
             json_data["buyerLanguage"] = buyer_language
         async with httpx.AsyncClient() as client:
